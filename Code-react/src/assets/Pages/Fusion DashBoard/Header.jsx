@@ -10,7 +10,7 @@ const Header = ({ title, onToggleSidebar }) => {
     // 点击外部区域关闭菜单的逻辑
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (userMenuRef.current && !userMenuMRef.current.contains(event.target)) {
+            if (userMenuRef.current && !userMenuRef.current.contains(event.target)) {
                 setUserMenuOpen(false);
             }
         };
